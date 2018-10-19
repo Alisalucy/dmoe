@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>贪吃蛇完整案例</title>
+<style>
+	#map{width: 1000px; height: 600px; background-color: beige; position: relative;}	
+</style>
+</head>
+
+<body>
+<div id="map"></div>
+
+<script src="food.js"></script>
+<script src="snake.js"></script>
+<script src="game.js"></script>
+<script>
+// 第一步 食物的自调用函数	
+// 第二步 小蛇的自调用 函数
+// 第三步 游戏调用
+// 实例化游戏函数
+var map = document.getElementById("map");
+var game = new Game(map);
+	game.init();
+	
+// 测试用
+/*var fd = new Food();
+	fd.init(map);
+var snake = new Snake();
+	snake.init(map);
+	snake.move(fd,map)
+	
+	setInterval(function(){
+		snake.move(fd,map);
+		snake.init(map);
+	},200)*/
+	// fd.init(document.getElementById("map"));
+	// fd.init(document.getElementById("map"));
+</script>
+<script src="read.js"></script>
+</body>
+</html>
